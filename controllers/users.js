@@ -7,7 +7,7 @@ const getAllUsers = asyncWrapper(async(req, res, next) => {
     res.status(201).json({users})
 })
 
-const createNewUsers = asyncWrapper(async(req, res, next) => {
+const createNewUser = asyncWrapper(async(req, res, next) => {
     const user = await User.create(req.body)
     res.status(201).json({user})
 })
@@ -42,7 +42,7 @@ const deleteUser = asyncWrapper(async(req, res, next) => {
 module.exports = {
     getSingleUser,
     getAllUsers,
-    createNewUsers,
+    createNewUser,
     updateUser,
     deleteUser,
 }
