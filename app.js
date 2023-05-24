@@ -6,8 +6,10 @@ const connectDB = require('./db/connect')
 require('dotenv').config()
 const notFound = require('./middleware/not-found-handler')
 const errorHandler = require('./middleware/error-handler')
+const cors = require('cors')
 
 // middleware
+app.use(cors())
 app.use(express.json())
 //routes
 app.use('/api/v1/users', users)
