@@ -1,46 +1,444 @@
+
 [
-    {
-      "name": "Trường khóa chính là trường",
-      "answers": [
-        {
-          "id": "A",
-          "content": "Single Key"
-        },
-        {
-          "id": "B",
-          "content": "Unique Key"
-        },
-        {
-          "id": "C",
-          "content": "First Key "
-        },
-        {
-          "id": "D",
-          "content": "Primary Key"
-        }
-      ],
-      "correct": "D"
-    },
-    {
-      "name": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL khách-chủ",
-      "answers": [
-        {
-          "id": "A",
-          "content": "Trong kiến trúc khách-chủ, các thành phần (của hệ QTCSDL) tương tác với nhau tạo nên hệ thống gồm thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên"
-        },
-        {
-          "id": "B",
-          "content": "Hai thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên phải cài đặt trên cùng một máy tính"
-        },
-        {
-          "id": "C",
-          "content": "Thành phần cấp tài nguyên thường được cài đặt tại một máy chủ trên mạng (cục bộ)"
-        },
-        {
-          "id": "D",
-          "content": "Thành phần yêu cầu tài nguyên có thể cài đặt tại nhiều máy khác (máy khách) trên mạng"
-        }
-      ],
-      "correct": "B"
-    }
-]
+  {
+    "name": "Trường khóa chính là trường",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Single Key"
+      },
+      {
+        "id": "B",
+        "content": "Unique Key"
+      },
+      {
+        "id": "C",
+        "content": "First Key "
+      },
+      {
+        "id": "D",
+        "content": "Primary Key"
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL khách-chủ",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Trong kiến trúc khách-chủ, các thành phần (của hệ QTCSDL) tương tác với nhau tạo nên hệ thống gồm thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên"
+      },
+      {
+        "id": "B",
+        "content": "Hai thành phần yêu cầu tài nguyên và thành phần cấp tài nguyên phải cài đặt trên cùng một máy tính"
+      },
+      {
+        "id": "C",
+        "content": "Thành phần cấp tài nguyên thường được cài đặt tại một máy chủ trên mạng (cục bộ)"
+      },
+      {
+        "id": "D",
+        "content": "Thành phần yêu cầu tài nguyên có thể cài đặt tại nhiều máy khác (máy khách) trên mạng"
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "name": "- Hãy chọn phương án đúng. Hai bảng trong một CSDL quan hệ liên kết với nhau thông qua: ",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Địa chỉ của các bảng "
+      },
+      {
+        "id": "B",
+        "content": "Tên trường "
+      },
+      {
+        "id": "C",
+        "content": "Thuộc tính của các trường được chọn (không nhất thiết phải là khóa) "
+      },
+      {
+        "id": "D",
+        "content": "Thuộc tính khóa "
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL cá nhân?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Người dùng đóng vai trò là người quản trị CSDL "
+      },
+      {
+        "id": "B",
+        "content": "Tính an toàn của hệ CSDL cá nhân rất cao "
+      },
+      {
+        "id": "C",
+        "content": "Hệ CSDL cá nhân được lưu trữ trên 1 máy "
+      },
+      {
+        "id": "D",
+        "content": "Hệ CSDL chỉ cho phép 1 người dùng tại một thời điểm "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Tiêu chí nào sau đây thường được dùng để chọn khóa chính?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Khóa có ít thuộc tính nhất "
+      },
+      {
+        "id": "B",
+        "content": "Không chứa các thuộc tính thay đổi theo thời gian "
+      },
+      {
+        "id": "C",
+        "content": "Khóa bất kì "
+      },
+      {
+        "id": "D",
+        "content": "Chỉ là khóa có một thuộc tính "
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "name": "Thế nào là cơ sở dữ liệu quan hệ?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Cơ sở dữ liệu được xây dựng dựa trên mô hình dữ liệu quan hệ "
+      },
+      {
+        "id": "B",
+        "content": "Cơ sở dữ liệu dùng để tạo lập, cập nhật và khai thác CSDL quan hệ "
+      },
+      {
+        "id": "C",
+        "content": "Cơ sở dữ liệu được xây dựng dựa trên mô hình dữ liệu quan hệ và khai thác CSDL quan hệ "
+      },
+      {
+        "id": "D",
+        "content": "Cơ sở dữ liệu dùng để tạo lập, cập nhật và khai thác CSDL quan hệ dựa trên mô hình dữ liệu quan hệ "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Liên kết giữa các bảng được dựa trên:",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Thuộc tính khóa "
+      },
+      {
+        "id": "B",
+        "content": "Các thuộc tính trùng tên nhau giữa các bảng "
+      },
+      {
+        "id": "C",
+        "content": "Ý định của người quản trị hệ CSDL "
+      },
+      {
+        "id": "D",
+        "content": "Ý định ghép các bảng thành một bảng có nhiều thuộc tính hơn "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Câu nào sai trong các câu dưới đây khi nói về ưu điểm của hệ CSDL khách-chủ?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Chi phí cho truyền thông giảm "
+      },
+      {
+        "id": "B",
+        "content": "Bổ sung thêm máy khách là dễ dàng "
+      },
+      {
+        "id": "C",
+        "content": "Phát triển và sử dụng các hệ CSDL khách-chủ khá đơn giản, dễ dàng "
+      },
+      {
+        "id": "D",
+        "content": "Nâng cao khả năng đảm bảo tính nhất quán của dữ liệu "
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "name": "Khẳng định nào sau đây về CSDL quan hệ là đúng?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Tập hợp các bảng dữ liệu "
+      },
+      {
+        "id": "B",
+        "content": "Cơ sở dữ liệu được tạo ra từ hệ QTCSDL Access "
+      },
+      {
+        "id": "C",
+        "content": "Cơ sở dữ liệu mà giữa các dữ liệu có quan hệ với nhau "
+      },
+      {
+        "id": "D",
+        "content": "Cơ sở dữ liệu được xây dựng trên mô hình dữ liệu quan hệ "
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Câu nào sai trong các câu dưới đây?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Mỗi bảng có ít nhất một khóa "
+      },
+      {
+        "id": "B",
+        "content": "Nên chọn khóa chính là khóa có ít thuộc tính nhất "
+      },
+      {
+        "id": "C",
+        "content": "Trong một bảng có thể có nhiều khóa chính "
+      },
+      {
+        "id": "D",
+        "content": "iệc xác định khóa phụ thuộc vào quan hệ logic của các dữ liệu chứ không phụ thuộc vào giá trị các dữ liệu"
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "name": "Trong quá trình cập nhật dữ liệu, được hệ quản trị CSDL kiểm soát để đảm bảo tính chất nào?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Tính chất ràng buộc toàn vẹn "
+      },
+      {
+        "id": "B",
+        "content": "Tính độc lập "
+      },
+      {
+        "id": "C",
+        "content": "Tính nhất quán "
+      },
+      {
+        "id": "D",
+        "content": "Tính bảo mật "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Hãy cho biết ý kiến nào là đúng. Với một bảng dữ liệu, hệ QTCSDL cho phép:",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Xem nội dung các bản ghi "
+      },
+      {
+        "id": "B",
+        "content": "Xem mối liên kết giữa bảng đó với các bảng khác "
+      },
+      {
+        "id": "C",
+        "content": "Xem một số trường của mỗi bản ghi "
+      },
+      {
+        "id": "D",
+        "content": "Tất cả đều đúng "
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Câu nào trong các câu dưới đây sai khi nói về hệ CSDL trung tâm?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Là hệ CSDL được cài đặt trên máy tính trung tâm cho phép nhiều người sử dụng cùng một lúc "
+      },
+      {
+        "id": "B",
+        "content": "Máy tính trung tâm này chỉ là một máy tính duy nhất "
+      },
+      {
+        "id": "C",
+        "content": "Nhiều người dùng từ xa có thể truy cập vào CSDL này thông qua thiết bị đầu cuối và các phương tiện truyền thông "
+      },
+      {
+        "id": "D",
+        "content": "Các hệ CSDL trung tâm thường rất lớn và có nhiều người dùng "
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "name": "Trong các ưu điểm dưới đây, ưu điểm nào không phải của các hệ CSDL phân ",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Dữ liệu có tính sẵn sàng "
+      },
+      {
+        "id": "B",
+        "content": "Dữ liệu được chia sẻ trên mạng nhưng vẫn cho phép quản trị dữ liệu địa phương "
+      },
+      {
+        "id": "C",
+        "content": "Việc thiết kế CSDL đơn giản, chi phí thấp hơn "
+      },
+      {
+        "id": "D",
+        "content": "Dữ liệu có tính tin cậy cao "
+      }
+    ],
+    "correct": "C"
+  },
+  {
+    "name": "Câu nào sai trong các câu dưới đây khi nói về ưu điểm của hệ CSDL khách-chủ?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Khả năng truy cập rộng rãi đến các CSDL "
+      },
+      {
+        "id": "B",
+        "content": "Phát triển và sử dụng các hệ CSDL khách-chủ khá đơn giản, dễ dàng "
+      },
+      {
+        "id": "C",
+        "content": "Nâng cao khả năng thực hiện "
+      },
+      {
+        "id": "D",
+        "content": "Chi phí cho phần cứng có thể giảm "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Trong các phần mềm sau đây, phần mềm nào không phải là hệ quản trị CSDL quan hệ?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Microsoft Excel "
+      },
+      {
+        "id": "B",
+        "content": "Microsoft Access "
+      },
+      {
+        "id": "C",
+        "content": "Microsoft SQL server "
+      },
+      {
+        "id": "D",
+        "content": "Oracle "
+      }
+    ],
+    "correct": "A"
+  },
+  {
+    "name": "Đâu không phải là các bước xây dựng cơ sở dữ liệu?",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Thiết kế "
+      },
+      {
+        "id": "B",
+        "content": "Khảo sát "
+      },
+      {
+        "id": "C",
+        "content": "Chạy thử "
+      },
+      {
+        "id": "D",
+        "content": "Ký hợp đồng "
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Hãy chọn phương án trả lời đúng. Có các câu trả lời sau cho câu hỏi : \"Tại sao phải khai báo kích thước cho mỗi trường?\"",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Để giúp hệ thống kiểm tra tính đúng đắn khi nhập dữ liệu "
+      },
+      {
+        "id": "B",
+        "content": "Để có thể tính kích thước của bản ghi (bộ dữ liệu) và xác định vị trí các trường trong bản ghi "
+      },
+      {
+        "id": "C",
+        "content": "Để hệ thống dự trữ vùng nhớ phục vụ ghi dữ liệu  "
+      },
+      {
+        "id": "D",
+        "content": "Tất cả đều đúng "
+      }
+    ],
+    "correct": "D"
+  },
+  {
+    "name": "Các bước chính để tạo CSDL:",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng; Tạo liên kết bảng "
+      },
+      {
+        "id": "B",
+        "content": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng và lưu cấu trúc bảng "
+      },
+      {
+        "id": "C",
+        "content": "Tạo bảng; Chọn khóa chính cho bảng; Lưu cấu trúc bảng; Tạo liên kết bảng; cập nhật và khai thác CSDL "
+      },
+      {
+        "id": "D",
+        "content": "Tạo bảng; Chọn khóa chính cho bảng; Đặt tên bảng; Tạo liên kết bảng "
+      }
+    ],
+    "correct": "B"
+  },
+  {
+    "name": "SQL là tên viết tắt của:",
+    "answers": [
+      {
+        "id": "A",
+        "content": "Structure Query Language "
+      },
+      {
+        "id": "B",
+        "content": "Query Structure Language "
+      },
+      {
+        "id": "C",
+        "content": "Structure Question Language "
+      },
+      {
+        "id": "D",
+        "content": "Structure Query Locator"
+      }
+    ],
+    "correct": "A"
+  }
+  ]
+ 

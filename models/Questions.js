@@ -23,7 +23,10 @@ const questionSchema = new mongoose.Schema({
     required: [true, "must provide name"],
     trim: true,
   },
-  answers: [answerSchema],
+  answers: {
+    type: [answerSchema],
+    id_1: Number
+  },
   correct: {
     type: String,
     required: [true, "must provide correct answer"],
