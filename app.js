@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const admin = require('./routes/admin')
 const users = require('./routes/users')
 const questions = require('./routes/questions')
 const connectDB = require('./db/connect')
@@ -14,6 +15,7 @@ app.use(express.json())
 //routes
 app.use('/api/v1/users', users)
 app.use('/api/v1/questions', questions)
+app.use('/api/v1/admins', admin)
 app.use(notFound)
 app.use(errorHandler)
 
